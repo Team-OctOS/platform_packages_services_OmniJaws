@@ -13,7 +13,7 @@
     <permission android:name="org.omnirom.omnijaws.READ_WEATHER" />
 
     <uses-sdk
-        android:minSdkVersion="24"
+        android:minSdkVersion="25"
         android:targetSdkVersion="25" />
 
     <application
