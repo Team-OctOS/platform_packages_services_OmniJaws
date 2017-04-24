@@ -60,4 +60,8 @@
     <string name="weather_config_title">Service settings</string>
     <string name="weather_config_summary"></string>
     <string name="omnijaws_service_error_marker" translatable="false">*</string>
+
+    <!-- Weather - Speed units -->
+    <string name="weather_kph">kph</string>
+    <string name="weather_mph">mph</string>
 </resources>
