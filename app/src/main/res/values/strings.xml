@@ -49,4 +49,10 @@
 	<string name="service_disabled">Disabled</string>
 	<string name="service_error">Error</string>
 	<string name="last_update_time">Last update time</string>
+    <string name="omnijaws_service_unkown">No weather data</string>
+    <string name="weather_widget">Weather</string>
+    <string name="omnijaws_current_text">Now</string>
+    <string name="show_background_title">Background shadow</string>
+    <string name="weather_config_title">Service settings</string>
+    <string name="weather_config_summary"></string>
 </resources>
