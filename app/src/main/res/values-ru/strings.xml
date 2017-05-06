@@ -18,11 +18,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-  <string name="app_name" translatable="false">OmniJaws</string>
   <string name="provider_title">Провайдер погоды</string>
   <string name="units_title">Единица измерения</string>
-  <string name="provider_openweathermap" translatable="false">OpenWeatherMap</string>
-  <string name="provider_yahoo" translatable="false">Yahoo</string>
   <string name="weather_progress_title">Проверка местоположения</string>
   <string name="weather_select_location">Выбрать местоположение</string>
   <string name="custom_location_title">Настройки местоположения</string>
@@ -51,6 +48,10 @@
   <string name="service_error">Ошибка</string>
   <string name="last_update_time">Последнее обновление</string>
   <string name="omnijaws_service_unkown">Нет данных о погоде</string>
+  <string name="omnijaws_service_error">Ошибка загрузки данных о погоде</string>
+  <string name="omnijaws_service_init">Загрузка данных о погоде...</string>
+  <string name="omnijaws_service_progress">Обновление...</string>
+  <string name="omnijaws_service_disabled">Служба отключена</string>
   <string name="weather_widget">Погода</string>
   <string name="omnijaws_current_text">Сейчас</string>
   <string name="show_background_title">Тень фона</string>
