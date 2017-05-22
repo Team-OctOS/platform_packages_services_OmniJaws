@@ -38,7 +38,7 @@ public class OpenWeatherMapProvider extends AbstractWeatherProvider {
     private static final int FORECAST_DAYS = 5;
     private static final String SELECTION_LOCATION = "lat=%f&lon=%f";
     private static final String SELECTION_ID = "id=%s";
-    private static final String API_KEY = "9f65b19b7a6648346dda93c6973a682c";
+    private static final String API_KEY = "5f96e579703dc5018ef7413baa51d7fd";
 
     private static final String URL_LOCATION =
             "http://api.openweathermap.org/data/2.5/find?q=%s&mode=json&lang=%s&appid=%s";
@@ -120,14 +120,18 @@ public class OpenWeatherMapProvider extends AbstractWeatherProvider {
             ArrayList<DayForecast> forecasts =
                     parseForecasts(new JSONObject(forecastResponse).getJSONArray("list"), metric);
             String localizedCityName = conditions.getString("name");
-
+            float windSpeed = (float) windData.getDouble("speed");
+            if (metric) {
+                // speeds are in m/s so convert to our common metric unit km/h
+                windSpeed *= 3.6f;
+            }
             WeatherInfo w = new WeatherInfo(mContext, conditions.getString("id"), localizedCityName,
                     /* condition */ weather.getString("main"),
                     /* conditionCode */ mapConditionIconToCode(
                             weather.getString("icon"), weather.getInt("id")),
                     /* temperature */ sanitizeTemperature(conditionData.getDouble("temp"), metric),
                     /* humidity */ (float) conditionData.getDouble("humidity"),
-                    /* wind */ (float) windData.getDouble("speed"),
+                    /* wind */ windSpeed,
                     /* windDir */ windData.has("deg") ? windData.getInt("deg") : 0,
                     metric,
                     forecasts,
