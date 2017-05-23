@@ -32,7 +32,7 @@
   <string name="weather_settings_title">Настройки погоды</string>
   <string name="auto_update_title">Автоматические обновления</string>
   <string name="unit_metric">Метрическая (\u00b0C)</string>
-  <string name="unit_imperial">Формат (\u00b0F)</string>
+  <string name="unit_imperial">Английская (\u00b0F)</string>
   <string name="update">Обновить</string>
   <string name="enable_title">Включить</string>
   <string name="update_interval_title">Частота обновления</string>
@@ -57,4 +57,9 @@
   <string name="show_background_title">Тень фона</string>
   <string name="weather_config_title">Настройки сервиса</string>
   <string name="weather_config_summary"></string>
+
+<!-- Weather - Speed units -->
+  <string name="weather_kph">км/ч</string>
+  <string name="weather_mph">миль/ч</string>
+
 </resources>
