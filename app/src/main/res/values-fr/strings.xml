@@ -57,4 +57,8 @@
   <string name="show_background_title">Ombre d\'arrière-plan</string>
   <string name="weather_config_title">Paramètres</string>
   <string name="weather_config_summary"></string>
+
+    <!-- Weather - Speed units -->
+    <string name="weather_kph">km/h</string>
+    <string name="weather_mph">mi/h</string>
 </resources>
