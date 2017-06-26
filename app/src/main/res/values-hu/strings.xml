@@ -56,4 +56,7 @@
   <string name="show_background_title">Háttér árnyéka</string>
   <string name="weather_config_title">Szolgáltatás beállítások</string>
   <string name="weather_config_summary"></string>
+  <!-- Weather - Speed units -->
+  <string name="weather_kph">km/h</string>
+  <string name="weather_mph">mph</string>
 </resources>
